@@ -666,7 +666,9 @@ button:active {
   transform: translateY(0);
   opacity: 1;
 }
+
 /* Модальне вікно */
+
 .backdrop {
   position: fixed;
   top: 0;
