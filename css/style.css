@@ -126,6 +126,7 @@ img {
 .nav-link:hover .mail,
 .nav-link:focus .mail {
   fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .telephone {
   width: 10px;
@@ -344,6 +345,7 @@ img {
   justify-content: center;
   width: 44px;
   height: 44px;
+  border-radius: 50%;
   background-color: #ffffff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -358,8 +360,8 @@ img {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
-  border-radius: 50%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 /* Постійні клієнти */
 .clients {
@@ -439,7 +441,7 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
-  transition: color 2500s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link {
   margin-top: 9px;
@@ -522,9 +524,10 @@ address {
 .social-link-footer:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 /* Портфоліо */
+
 .buttons {
   display: flex;
   justify-content: center;
@@ -545,7 +548,8 @@ address {
   border-radius: 4px;
   border: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-item:not(:last-child) {
   margin-right: 8px;
@@ -607,6 +611,7 @@ button:active {
 }
 .project-link {
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-link:hover,
 .project-link:focus {
@@ -670,7 +675,8 @@ button:active {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
